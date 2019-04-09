@@ -1,0 +1,31 @@
+zip()
+AB = [list(map(int, input().split())) for i in range(N)]
+
+
+A = [a,b,b,c,d]
+A = [tmp for tmp in (list) if tmp == a]
+###  A = [a]
+
+
+
+###bit全探索
+
+for x in range (2 ** NUMBER):
+	for y in range(NUMBER):
+		if (x >> y) & 1:
+			DO     
+####
+解説
+
+まず、bit探索するためにNUMBER(探索する場所の長さ)を決める
+2**NUMBERの数だけloop(why 2**n ? ==> 選ぶor選ばないの２択を1~NUMBERすべてにするため　これは2**nになる(2*2*...)
+#二進数表記で001 010 011 100 101 110 111 といったようにフラグをすべての個所に立てれるため　2**NUMBER を使う
+y:shift する数　当然全探索なので0~NUMBER(111 > 011 > 001)
+x>>y : shift
+&1 == 1: フラグが立っているもの検索
+
+####
+
+
+
+
