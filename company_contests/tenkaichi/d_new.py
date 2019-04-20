@@ -3,7 +3,7 @@ s = input()
 bs = 0
 ws = s.count('.')
 #準備すべての.を数えとく>> 現在地より右側の～カウントのため
-ans = n
+ans = ws
 for c in s:
     if c == '.':
         ws -= 1
