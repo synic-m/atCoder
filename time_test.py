@@ -12,5 +12,3 @@ elapsed_time = time.time() - start1
 print ("1_time:{0}".format(elapsed_time) + "[sec]")
 
 
-
-
