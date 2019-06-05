@@ -1,0 +1,20 @@
+n = int(input())
+lis = [list(map(int,input().split())) for x in range(n-1)]
+clis = sorted(list(map(int,input().split())),reverse=True)
+ch_lis = []
+ans_lis = []
+num = 0
+for x in clis:
+    now = lis.index(min(lis))
+    print(now)
+    if lis[now][0] in ch_lis:
+        lis[now][1] = x
+    else:
+        ch_lis.append(lis[now][0])
+        lis[now][0] = x
+    ans_lis.append(lis[now])
+    num += 1
+        
+ans = 0 
+for x in ans_lis:
+    print(x)
