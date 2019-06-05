@@ -16,7 +16,7 @@ def dfs(cur,a,b,c):
     ret0 = dfs(cur+1,a+l[cur],b,       c)        + 10
     ret1 = dfs(cur+1,a,       b+l[cur],c)        + 10
     ret2 = dfs(cur+1,a,       b,       c+l[cur]) + 10
-    ret3 = dfs(cur+1,a,       b,       c)        + 10
+    ret3 = dfs(cur+1,a,       b,       c)
     #a,b,c,どこにも入れないの4通り
     #分けて接合 -> 10
     return min(ret0,ret1,ret2,ret3)
